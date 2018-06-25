@@ -1,7 +1,8 @@
-import cmp from './src/main'
+import Doz from 'doz'
+import cmp from './lib'
 
 // expose component to global scope
-if (typeof window !== 'undefined' && window.Doz) {
+if (typeof window !== 'undefined') {
     Doz.component('your-component-tag', cmp)
 }
 

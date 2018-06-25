@@ -16,4 +16,4 @@ $ npm install
 - Edit README
 - Change tag name in `index.js` and `example/index.html`
 - Set your remote repo
-- Go to `src/main.js`
+- Write your component inside `lib/` folder
