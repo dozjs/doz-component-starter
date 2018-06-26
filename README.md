@@ -16,10 +16,16 @@ $ npm install
 - Write your component inside `lib/` folder
 - Edit package.json with your info
 - Set your remote repo
-- Run script to publish to NPM
-    - release:major (publish a major)
-    - release:minor (publish a minor)
-    - release:patch (publish a patch)
+- Development:
+    - run script `watch`
+- Production:
+    - run script `build:production`
+- Testing:
+    - run script `test`
+- Publish on NPM, you can run scripts below (automatically build for production)
+    - `release:major` (publish a major)
+    - `release:minor` (publish a minor)
+    - `release:patch` (publish a patch)
 - Replace README.md content with README.md.sample
 
 ## Changelog
