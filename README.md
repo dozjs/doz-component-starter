@@ -13,7 +13,7 @@ $ npm install
 
 ## Remember
 - Edit package.json with your info
-- Edit README
+- Replace README.md with README.md.sample
 - Change tag name in `index.js` and `example/index.html`
 - Set your remote repo
 - Write your component inside `lib/` folder
