@@ -16,6 +16,10 @@ $ npm install
 - Write your component inside `lib/` folder
 - Edit package.json with your info
 - Set your remote repo
+- Run script to publish to NPM
+    - release:major (publish a major)
+    - release:minor (publish a minor)
+    - release:patch (publish a patch)
 - Replace README.md content with README.md.sample
 
 ## Changelog
