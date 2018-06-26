@@ -1,0 +1,51 @@
+# [YOUR-COMPONENT]
+[YOUR-COMPONENT-DESCRIPTION]
+
+## Install
+```
+npm install [YOUR-COMPONENT]
+```
+
+Live <a href="https://dozjs-cmp.github.io/[YOUR-REPO-NAME]/example/index.html">here</a>
+
+## Usage
+
+Globally
+```javascript
+import Doz from 'doz'
+
+```
+
+Locally
+```javascript
+import Doz from 'doz'
+
+```
+
+## Props
+| Name | Default | Description |
+| ---- | ------- | ----------- |
+
+## Events
+
+| Name | Args | Description |
+| ---- | ------- | ----------- |
+
+### Example
+```javascript
+
+```
+
+#### CDN unpkg
+```html
+<script src="https://unpkg.com/[YOUR-NAMESPACE]/dist/bundle.min.js"></script>
+```
+
+## Changelog
+You can view the changelog <a target="_blank" href="https://github.com/[YOUR-USER]/[YOUR-REPO-NAME]/blob/master/CHANGELOG.md">here</a>
+
+## License
+[YOUR-COMPONENT] is open-sourced software licensed under the <a target="_blank" href="http://opensource.org/licenses/MIT">MIT license</a>
+
+## Author
+<a target="_blank" href="[YOUR-WEB-SITE]">[YOUR-NAME]</a>
