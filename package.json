@@ -1,7 +1,7 @@
 {
-    "name": "doz-component",
+    "name": "[YOUR-COMPONENT]",
     "version": "0.0.0",
-    "description": "",
+    "description": "[YOUR-COMPONENT-DESCRIPTION]",
     "main": "dist/bundle.js",
     "scripts": {
         "release:before": "npm run-script test",
@@ -20,14 +20,14 @@
     ],
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "git+https://github.com/[YOUR-GITHUB-SPACE]/[YOUR-REPOSITORY].git"
     },
     "bugs": {
-        "url": ""
+        "url": "https://github.com/[YOUR-GITHUB-SPACE]/[YOUR-REPOSITORY]/issues"
     },
-    "homepage": "",
-    "author": "",
-    "license": "",
+    "homepage": "https://github.com/[YOUR-GITHUB-SPACE]/[YOUR-REPOSITORY]#readme",
+    "author": "[YOUR-NAME]",
+    "license": "MIT",
     "devDependencies": {
         "babel-core": "^6.26.0",
         "babel-loader": "^7.1.2",
