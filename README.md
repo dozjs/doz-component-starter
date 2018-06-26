@@ -12,12 +12,11 @@ $ npm install
 ```
 
 ## Remember
-- Edit package.json with your info
-- Replace README.md with README.md.sample
 - Change tag name in `index.js` and `example/index.html`
-- Set your remote repo
 - Write your component inside `lib/` folder
-
+- Edit package.json with your info
+- Set your remote repo
+- Replace README.md content with README.md.sample
 
 ## Changelog
 You can view the changelog <a target="_blank" href="https://github.com/dozjs/doz-component-starter/blob/master/CHANGELOG.md">here</a>
