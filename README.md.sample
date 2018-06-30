@@ -8,6 +8,11 @@ npm install [YOUR-COMPONENT]
 
 Live <a href="https://[YOUR-GITHUB-SPACE].github.io/[YOUR-REPOSITORY]/example/index.html">here</a>
 
+### Example
+```javascript
+
+```
+
 ## Usage
 
 Globally
@@ -31,10 +36,6 @@ import Doz from 'doz'
 | Name | Args | Description |
 | ---- | ------- | ----------- |
 
-### Example
-```javascript
-
-```
 
 #### CDN unpkg
 ```html
