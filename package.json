@@ -1,5 +1,5 @@
 {
-    "name": "[YOUR-COMPONENT]",
+    "name": "YOUR-COMPONENT",
     "version": "0.0.0",
     "description": "[YOUR-COMPONENT-DESCRIPTION]",
     "main": "dist/bundle.js",
