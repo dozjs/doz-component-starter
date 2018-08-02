@@ -5,8 +5,12 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 function dashToCamelCase(str) {
     return str
         .toLowerCase()
-        .replace(/^(.)/, function (g) {return g.toUpperCase(); })
-        .replace(/-([a-z])/g, function (g) {return g[1].toUpperCase(); });
+        .replace(/^(.)/, function (g) {
+            return g.toUpperCase();
+        })
+        .replace(/-([a-z])/g, function (g) {
+            return g[1].toUpperCase();
+        });
 }
 
 const libraryName = dashToCamelCase(require('./package').name);
@@ -24,6 +28,14 @@ module.exports = {
         modules: ['node_modules'],
         extensions: ['*', '.js']
     },
+    externals: {
+        doz: {
+            commonjs: 'doz',
+            commonjs2: 'doz',
+            amd: 'doz',
+            root: 'Doz'
+        }
+    },
     module: {
         rules: [
             {
@@ -35,7 +47,7 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use: [ 'style-loader', 'css-loader' ]
+                use: ['style-loader', 'css-loader']
             }
         ]
     },
