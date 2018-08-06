@@ -1,5 +1,5 @@
-import Component from '../lib';
-import be from 'bejs';
+import Component from '../src'
+import {assert} from 'chai'
 
 describe('my-test', function () {
 
@@ -18,7 +18,7 @@ describe('my-test', function () {
     });
 
     it('should an object', function () {
-        be.err.object(Component)
+        assert.typeOf(Component, 'object');
     });
 
 });
