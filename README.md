@@ -12,7 +12,7 @@ $ npm install
 ```
 
 ## Remember
-- Change tag name in `index.js` and `example/index.html`
+- Change tag name in `index.js` and `dist/index.html`
 - Write your component inside `lib/` folder
 - Edit package.json with your info
 - Set your remote repo

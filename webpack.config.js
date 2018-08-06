@@ -1,6 +1,9 @@
 const unminifiedWebpackPlugin = require('unminified-webpack-plugin');
 const WebpackAutoInject = require('webpack-auto-inject-version');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const webpack = require('webpack');
+
+const isDevServer = process.argv[1].indexOf('webpack-dev-server') !== -1;
 
 function dashToCamelCase(str) {
     return str
@@ -16,6 +19,12 @@ function dashToCamelCase(str) {
 const libraryName = dashToCamelCase(require('./package').name);
 
 module.exports = {
+    mode: isDevServer ? 'development' : 'production',
+    devtool: 'inline-source-map',
+    devServer: {
+        contentBase: './dist',
+        hot: true
+    },
     entry: './index.js',
     output: {
         filename: './bundle.min.js',
@@ -75,6 +84,7 @@ module.exports = {
                 }
             }
         }),
-        new unminifiedWebpackPlugin()
+        new unminifiedWebpackPlugin(),
+        new webpack.HotModuleReplacementPlugin()
     ]
 };
