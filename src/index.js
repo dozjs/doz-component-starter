@@ -1,17 +1,23 @@
 import style from './style.css'
 
 export default {
-    module,
+
     props: {
         name: 'DOZ'
     },
 
     template() {
         return `
-            <div class="${style.myComponent}">
+            <button 
+                onclick="this.$clickMe()"
+                class="${style.myComponent}">
                 hello ${this.props.name}
-            </div>
+            </button>
         `
+    },
+
+    $clickMe() {
+        alert('Ciao!');
     },
 
     onCreate() {

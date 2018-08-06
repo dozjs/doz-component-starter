@@ -1,5 +1,5 @@
 import Doz from 'doz'
-import cmp from './lib'
+import cmp from './src'
 
 // expose component to global scope
 function register() {
@@ -14,7 +14,6 @@ export default cmp
 
 if (module.hot) {
     module.hot.dispose(function () {
-        console.log('Accepting the updated module!');
         register();
     })
 }

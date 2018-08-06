@@ -2,7 +2,7 @@ const unminifiedWebpackPlugin = require('unminified-webpack-plugin');
 const WebpackAutoInject = require('webpack-auto-inject-version');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const webpack = require('webpack');
-
+const HardSourceWebpackPlugin = require('hard-source-webpack-plugin');
 const isDevServer = process.argv[1].indexOf('webpack-dev-server') !== -1;
 
 function dashToCamelCase(str) {
@@ -31,7 +31,8 @@ module.exports = {
         library: libraryName,
         umdNamedDefine: true,
         libraryTarget: 'umd',
-        globalObject: 'this'
+        globalObject: 'this',
+        pathinfo: false
     },
     resolve: {
         modules: ['node_modules'],
@@ -49,7 +50,8 @@ module.exports = {
         rules: [
             {
                 test: /\.js?$/,
-                loader: 'babel-loader',
+                loader: 'babel-loader?cacheDirectory=true',
+                //loader: 'babel-loader',
                 options: {
                     presets: ['env']
                 }
@@ -85,6 +87,7 @@ module.exports = {
             }
         }),
         new unminifiedWebpackPlugin(),
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin(),
+        new HardSourceWebpackPlugin()
     ]
 };

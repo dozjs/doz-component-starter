@@ -13,11 +13,11 @@ $ npm install
 
 ## Remember
 - Change tag name in `index.js` and `dist/index.html`
-- Write your component inside `lib/` folder
+- Write your component inside `src/` folder
 - Edit package.json with your info
 - Set your remote repo
 - Development:
-    - run script `watch`
+    - run script `start`
 - Production:
     - run script `build:production`
 - Testing:
