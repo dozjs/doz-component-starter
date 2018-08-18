@@ -6,7 +6,7 @@
 npm install [YOUR-COMPONENT]
 ```
 
-Live <a href="https://[YOUR-GITHUB-SPACE].github.io/[YOUR-REPOSITORY]/example/index.html">here</a>
+Live <a href="https://[YOUR-GITHUB-SPACE].github.io/[YOUR-REPOSITORY]/dist/index.html">here</a>
 
 ### Example
 ```javascript
