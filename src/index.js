@@ -6,8 +6,8 @@ export default {
         name: 'DOZ'
     },
 
-    template() {
-        return `
+    template(h) {
+        return h`
             <button 
                 onclick="this.$clickMe()"
                 class="${style.myComponent}">
