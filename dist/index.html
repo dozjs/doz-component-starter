@@ -21,11 +21,13 @@
 
 <script>
 
-    const app = new Doz({
+    new Doz({
         root: '#app',
-        template: `
-            <your-component-tag></your-component-tag>
-        `
+        template(h) {
+            return h`
+                <your-component-tag></your-component-tag>
+            `
+        }
     });
 
 </script>
