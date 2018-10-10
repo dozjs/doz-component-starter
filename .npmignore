@@ -9,3 +9,4 @@ webpack.config.js
 .travis.yml
 example/
 README.md.sample
+src/
