@@ -1,5 +1,3 @@
-import style from './style.css'
-
 export default {
 
     props: {
@@ -8,15 +6,22 @@ export default {
 
     template(h) {
         return h`
+
+            <style> 
+                button {
+                    font-size: 24px;
+                    padding: 20px;
+                }
+            </style>
+            
             <button 
-                onclick="this.$clickMe()"
-                class="${style.myComponent}">
+                onclick="this.clickMe()">
                 hello ${this.props.name}
             </button>
         `
     },
 
-    $clickMe() {
+    clickMe() {
         alert('Ciao!');
     },
 
