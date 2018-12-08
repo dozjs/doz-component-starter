@@ -1,3 +1,4 @@
+--require jsdom-global/register
 --require babel-register
 --require ignore-styles
 --reporter spec

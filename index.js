@@ -1,10 +1,10 @@
-import Doz from 'doz'
+import {define} from 'doz'
 import cmp from './src'
 
 // expose component to global scope
 function register() {
     if (typeof window !== 'undefined') {
-        Doz.component('your-component-tag', cmp)
+        define('your-component-tag', cmp)
     }
 }
 

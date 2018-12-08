@@ -1,8 +1,14 @@
-export default {
+import {Component} from "doz";
 
-    props: {
-        name: 'DOZ'
-    },
+export default class extends Component{
+
+    constructor(o) {
+        super(o);
+
+        this. props = {
+            name: 'DOZ'
+        }
+    }
 
     template(h) {
         return h`
@@ -19,23 +25,23 @@ export default {
                 hello ${this.props.name}
             </button>
         `
-    },
+    }
 
     clickMe() {
         alert('Ciao!');
-    },
+    }
 
     onCreate() {
 
-    },
+    }
 
     onMount() {
 
-    },
+    }
 
     onUpdate() {
 
-    },
+    }
 
     onDestroy() {
 
