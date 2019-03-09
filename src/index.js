@@ -6,7 +6,7 @@ export default class extends Component{
         super(o);
 
         this. props = {
-            name: 'DOZ'
+            name: 'Doz'
         }
     }
 
@@ -24,6 +24,7 @@ export default class extends Component{
                 onclick="this.clickMe()">
                 hello ${this.props.name}
             </button>
+            
         `
     }
 

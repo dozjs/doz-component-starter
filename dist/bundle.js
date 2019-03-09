@@ -147,7 +147,8 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _templateObject = _taggedTemplateLiteral(['\n\n            <style> \n                button {\n                    font-size: 24px;\n                    padding: 20px;\n                }\n            </style>\n            \n            <button \n                onclick="this.clickMe()">\n                hello ', '\n            </button>\n        '], ['\n\n            <style> \n                button {\n                    font-size: 24px;\n                    padding: 20px;\n                }\n            </style>\n            \n            <button \n                onclick="this.clickMe()">\n                hello ', '\n            </button>\n        ']);
+var _templateObject = _taggedTemplateLiteral(['\n                        <div>hello</div>\n                    '], ['\n                        <div>hello</div>\n                    ']),
+    _templateObject2 = _taggedTemplateLiteral(['\n\n            <style> \n                button {\n                    font-size: 24px;\n                    padding: 20px;\n                }\n            </style>\n            \n            <button \n                onclick="this.clickMe()">\n                hello ', '\n            </button>\n            <my-c/>\n        '], ['\n\n            <style> \n                button {\n                    font-size: 24px;\n                    padding: 20px;\n                }\n            </style>\n            \n            <button \n                onclick="this.clickMe()">\n                hello ', '\n            </button>\n            <my-c/>\n        ']);
 
 var _doz = __webpack_require__(0);
 
@@ -170,13 +171,21 @@ var _class = function (_Component) {
         _this.props = {
             name: 'DOZ'
         };
+
+        _this.config = {
+            components: {
+                'my-c': function myC(h) {
+                    return h(_templateObject);
+                }
+            }
+        };
         return _this;
     }
 
     _createClass(_class, [{
         key: 'template',
         value: function template(h) {
-            return h(_templateObject, this.props.name);
+            return h(_templateObject2, this.props.name);
         }
     }, {
         key: 'clickMe',
