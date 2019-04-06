@@ -1,5 +1,5 @@
 # doz-component-starter
-Boilerplate to creating Doz components
+Boilerplate for creating Doz components
 
 ## Install
 ```
