@@ -1,11 +1,11 @@
-import {define, createDozWebComponent} from 'doz'
+import {define, defineWebComponent} from 'doz'
 import cmp from './src'
 
 // expose component to global scope
 function register() {
     if (typeof window !== 'undefined') {
         define('your-component-tag', cmp);
-        createDozWebComponent('your-component-tag', cmp, [/*attributes you want observe*/]);
+        defineWebComponent('dwc-your-component-tag', cmp, [/*attributes you want observe*/]);
     }
 }
 
