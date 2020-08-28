@@ -12,7 +12,6 @@ export default class extends Component{
 
     template(h) {
         return h`
-
             <style> 
                 button {
                     font-size: 24px;
@@ -24,7 +23,6 @@ export default class extends Component{
                 onclick="${this.clickMe}">
                 hello ${this.props.name}
             </button>
-            
         `
     }
 
