@@ -5,7 +5,7 @@ export default class extends Component{
     constructor(o) {
         super(o);
 
-        this. props = {
+        this.props = {
             name: 'Doz'
         }
     }
