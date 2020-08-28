@@ -21,7 +21,7 @@ export default class extends Component{
             </style>
             
             <button 
-                onclick="this.clickMe()">
+                onclick="${this.clickMe}">
                 hello ${this.props.name}
             </button>
             
