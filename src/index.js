@@ -11,6 +11,8 @@ export default class extends Component{
     }
 
     template(h) {
+        
+        //language=HTML
         return h`
             <style> 
                 button {
