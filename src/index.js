@@ -1,6 +1,6 @@
 import {Component} from "doz";
 
-export default class extends Component{
+export default class MyComponent extends Component{
 
     constructor(o) {
         super(o);
