@@ -1,15 +1,12 @@
-import {Component} from "doz";
+import {Component, tag} from "doz";
 
-export default class MyComponent extends Component{
+@tag('your-component-tag')
+export default class MyComponent extends Component {
 
-    constructor(o) {
-        super(o);
-
-        this.props = {
-            name: 'Doz'
-        }
+    props = {
+        name: 'Doz'
     }
-
+    
     template(h) {
         
         //language=HTML
